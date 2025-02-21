@@ -26,11 +26,23 @@
 
     <section>
         <h2>Cadastrar novo cliente</h2>
-        <form id="userForm">
-            <input type="text" id="name" placeholder="Nome" required>
-            <input type="number" id="idade" placeholder="Idade" required>
-            <input type="email" id="email" placeholder="E-mail" required>
-            <input type="text" id="mensagem" placeholder="Mensagem" required>
+         <form id="userForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nome" required>
+                <span class="error-message">Campo obrigatório</span>
+            </div>
+            <div class="form-group">
+                <input type="number" id="idade" placeholder="Idade" required>
+                <span class="error-message">Campo obrigatório</span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <span class="error-message">Campo obrigatório</span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="mensagem" placeholder="Mensagem" required>
+                <span class="error-message">Campo obrigatório</span>
+            </div>
             <button type="submit">Salvar</button>
         </form>
     </section>

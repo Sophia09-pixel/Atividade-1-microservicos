@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     margin: 0;
@@ -26,7 +25,6 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 table {
     width: 100%;
@@ -71,18 +69,20 @@ form {
     gap: 15px;
 }
 
-input,
-button {
+
+input {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1em;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus {
     border-color: #3caca4;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    box-shadow: 0 0 5px rgba(60, 172, 164, 0.5);
 }
 
 button {
@@ -91,11 +91,21 @@ button {
     cursor: pointer;
     font-weight: 600;
     border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1em;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #218838;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
 }
 
 @media (max-width: 600px) {
