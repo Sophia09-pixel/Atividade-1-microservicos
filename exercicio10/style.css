@@ -1,29 +1,37 @@
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
-h1 {
+header {
+    background-color: #3caca4;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: #444;
-    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
     font-size: 2.5em;
     font-weight: 600;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
 section {
     background: white;
     padding: 25px;
-    margin-bottom: 25px;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table {
@@ -69,7 +77,6 @@ form {
     gap: 15px;
 }
 
-
 input {
     padding: 12px;
     border: 1px solid #ddd;
@@ -108,9 +115,25 @@ button:hover {
     margin-top: 5px;
 }
 
+footer {
+    background-color: #3caca4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
 @media (max-width: 600px) {
-    h1 {
+    header h1 {
         font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
     }
 
     section {
