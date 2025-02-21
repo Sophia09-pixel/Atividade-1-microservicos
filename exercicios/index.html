@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MyApp</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <p>Exercicio 2</p>
+            <p>Conteúdo para mudar de cor</p>
+            <button id="changeColorButton">Mudar Cor</button>
+        </section>
+        
+        <section>
+            <p>Exercício 3</p>
+            <input type="text" id="newItemInput" placeholder="Digite um item">
+            <button id="addItemButton">Adicionar Item</button>
+            <ul id="itemList"></ul>
+        </section>
+
+        <section id="chamadaApi"></section>
+
+        <section>
+            <p>Exercicio 5 e 9</p>
+            <form id="userForm">
+                <div>
+                    <input type="text" id="name" placeholder="Nome" required>
+                    <span id="nameError" class="error-message"></span>
+                </div>
+                <div>
+                    <input type="number" id="idade" placeholder="Idade" required>
+                    <span id="idadeError" class="error-message"></span>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div>
+                    <input type="text" id="mensagem" placeholder="Mensagem" required>
+                    <span id="mensagemError" class="error-message"></span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Dados da API</h2>
+            <p>Exercicio 6 e 7</p>
+            <button id="filterButton">Mostrar maiores de 18 anos</button>
+            <button id="resetButton" style="display: none;">Mostrar todos</button>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Email</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="crud">
+            <p>Exercicio 8</p>
+            <h2>CRUD Simulado</h2>
+            <form id="crudForm">
+                <input type="text" id="itemName" placeholder="Adicionar item" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="crudList"></ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Rodapé da página.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

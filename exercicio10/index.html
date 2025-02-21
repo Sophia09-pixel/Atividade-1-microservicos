@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Integração Completa</title>
+</head>
+<body>
+    <h1>Sessão Clientes</h1>
+    <section>
+        <h2>Listar Clientes</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Mensagem</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Cadastrar novo cliente</h2>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="number" id="idade" placeholder="Idade" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="text" id="mensagem" placeholder="Mensagem" required>
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
